@@ -28,6 +28,12 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+CORS_ALLOWED_ORIGINS = [
+    'http://localhost:8100',
+    'http://127.0.0.1:8100'
+]
+
+CORS_ALLOWED_CREENTIALS= True
 
 # Application definition
 
@@ -45,6 +51,9 @@ INSTALLED_APPS = [
     'comptes',
     'menus',
     'commandes',
+    'corsheaders',
+    'user_api.apps.UserApiConfig',
+    
     
 ]
  
